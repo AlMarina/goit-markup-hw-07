@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-       max-width: 1200px;
+       max-width: 1158px;
     }
     .section {
         padding-top: 120px;
@@ -13,20 +13,30 @@
     }
 
 /* ---------------- HEADER --------------- */
+ .header-container {
+     gap: 76px;
+ }
 
-        /* .nav-list {
-            display: flex;
-            align-items: center;
-            gap: 40px;
+.logo-link {
+     padding-bottom: 28px;
+     line-height: calc(24 / 18);
+     flex-grow: 0;
+ }
     
-        }
+.nav-link {
+     padding-bottom: 22px;
+ }
 
-        .address-list {
-                    display: flex;
-                    align-items: center;
-                    gap: 40px;
-                    margin-left: auto;
-                } */
+.header-address {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
+
+.address-list {
+    margin-left: auto;
+    gap: 40px;
+}
+        
 
 /* ------------------- HERO ------------------ */
 
@@ -41,7 +51,7 @@
     }
 
     .bg-hero {
-        max-width: 1440px;
+       
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg.jpg);
     }
 
@@ -137,5 +147,10 @@
     }
 
     
+    .modal-window {
+      
+        height: 584px;
+        padding: 24px;
+    }
 }
 
