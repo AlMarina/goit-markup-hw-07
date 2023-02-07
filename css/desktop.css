@@ -1,0 +1,93 @@
+
+
+
+/* ------------------- HERO ------------------ */
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .hero-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+    
+    
+    .hero-title {
+        margin-bottom: 48px;  
+    }
+
+    .bg-hero {
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg.jpg);
+    }
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .bg-hero {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-2x.jpg);
+                        }
+
+        }
+
+        @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+                .bg-hero {
+                        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-3x.jpg);
+                    }
+        
+        }
+
+
+/*  ---------------- BENEFITS ----------------- */
+        .benefits.container {
+            width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+    
+              --items: 4;
+        }
+
+        .benefits-item>.post-title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: calc(24 / 20);
+           
+        }
+        .benefits-item>.text {
+            font-weight: 400;
+        }
+
+        .icon-wrap {
+            display: block;
+            margin-bottom: 8px;
+            height: 112px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--bg-ligth-color);
+        }
+
+    /* ----------------- ACTIVITY ----------------- */
+        .section-activity {
+            display: block;
+            padding-top: 0;
+        }
+.section-activity .title {
+    margin-bottom: 72px;
+}
+    /* ------------------ TEAM ------------------ */
+
+   
+         
+    /* ---------------- CUSTOMERS ----------------- */
+
+    
+}

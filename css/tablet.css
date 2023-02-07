@@ -1,0 +1,90 @@
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+/* ------------------- HERO ------------------ */
+
+    .hero-section {
+        padding-top: 112px;
+        padding-bottom: 108px;
+    }
+
+    .hero-section>.container {
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        max-width: 496px;
+        margin-bottom: 40px;
+        font-size: 56px;
+        line-height: calc(60 / 56);
+    }
+    .bg-hero {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-tablet.jpg);    
+    }
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+             .bg-hero {
+                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-tablet-2x.jpg);
+             }
+         }
+
+         @media (min-device-pixel-ratio: ),
+         (min-resolution: 288dpi),
+         (min-resolution: 3dppx) {
+             .bg-hero {
+                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg-tablet-3x.jpg);
+             }
+         }
+/*  ---------------- BENEFITS ----------------- */
+
+.benefits.container {
+    width: 768px;
+    padding-left: 19px;
+    padding-right: 19px;
+    
+    --items: 2;
+}
+
+.benefits-item>.post-title {
+    text-align: left;
+}
+
+.benefits .card-set {
+    --indent: 24px;
+    row-gap: 72px;
+}
+
+.benefits-item {
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+
+}
+
+
+/* ------------------ TEAM ------------------ */
+
+.team-section {
+    padding-bottom: 104px;
+}
+
+.team-section .card-set {
+    --indent: 24px;
+    row-gap: 64px;
+}
+.team-card {
+    --items: 2;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    
+}
+
+/* ---------------- CUSTOMERS ----------------- */
+
+
+
+}

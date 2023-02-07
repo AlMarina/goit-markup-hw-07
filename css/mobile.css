@@ -1,0 +1,15 @@
+
+
+/* ------------------- HERO ------------------ */
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 480px;
+    }
+
+  .benefits.container {
+      width: 396px;
+  }
+   
+   
+} 
