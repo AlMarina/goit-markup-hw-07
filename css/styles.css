@@ -137,6 +137,8 @@ body {
 
 .container {
     /* width: 1158px; */
+    /* max-width: 428px; */
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -207,10 +209,7 @@ body {
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
+    display: none;
 }
 
 .nav-link {
@@ -252,11 +251,9 @@ body {
 }
 
 .address-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-left: auto;
+    display: none;
 }
+
 .header-address {
     line-height: calc(24 / 16);
     letter-spacing: 0.02em;
@@ -270,7 +267,37 @@ body {
 .header-address:focus {
     color: var(--active-text-color);
 }
+.menu-container {
+max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
+}
+
+.menu-open {
+width: 32px;
+height: 22px;
+padding: 0;
+background-color: transparent;
+border: none;
+}
+
+.menu-open-icon {
+    stroke: var(--icon-form-color);
+}
+
+.mob-menu{
+position: fixed;
+z-index: 5;
+top: 0;
+width: 100vw;
+height: 100vh;
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: var(--bg-superligth-color);
+}
 
 /* ------------------- HERO ------------------ */
 .hero-section {
@@ -286,6 +313,7 @@ width: 100%;
 }
 
 .bg-hero {
+    /* max-width: 480px; */
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
@@ -343,7 +371,9 @@ width: 100%;
     padding-bottom: 96px;
 }
 .benefits.container {
-    padding: 0 2px;
+    max-width: 410px;
+    padding-left: 11px;
+    padding-right: 11px;
     --indent: 72px;
 }
 
@@ -359,9 +389,9 @@ width: 100%;
     text-align: center;
 }
 
-.benefits-item {
+/* .benefits-item {
     flex-grow: 1;
-}
+} */
 
 .icon-wrap {
     display: none;
@@ -449,7 +479,7 @@ fill: var(--accent-icon-color);
 
 /* ---------------- CUSTOMERS ----------------- */
 .costomers-section {
-    padding-bottom: 96px;
+    padding-bottom: 91px;
 }
 .costomers-section .title {
     margin-bottom: 72px;
@@ -485,15 +515,19 @@ fill: var(--accent-icon-color);
 
 /* ------------------ FOOTER ----------------- */
 .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
     background-color: var(--bg-dark-color);
 }
 
+
 .logo {
     display: block;
     margin-bottom: 16px;
+    text-align: center;
+    
+    /* margin-bottom: 16px; */
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -504,23 +538,29 @@ fill: var(--accent-icon-color);
 }
 
 .footer-logo {
+  
     color: var(--logo-text-color);
 }
 
 .footer-text {
     max-width: 264px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
     color: var(--footer-text-color);
 }
 
-.text-title{
+.text-title {
     margin-bottom: 16px;
     font-weight: 500;
+   text-align: center;
     color: var(--light-text-color);
 }
 
-.footer-left-side {
-    margin-right: 120px;
-}
+/* .footer-left-side {
+    margin-right: auto;
+    margin-left: auto;
+} */
 
 .footer-midle .social-link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -533,25 +573,26 @@ fill: var(--accent-icon-color);
     background-color: var(--icon-bg-color);
 }
 
-.footer-wrap {
-    display: flex;
-}
 
-.footer-midle {
+
+.footer-midle { 
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
 }
 
-.footer-midle>.card-set{
+.footer-midle>.card-set {
     gap: 16px;
 }
 
-.footer-rigth-side {
-    display: flex;   
+.footer-wrap-form>.card-set {
+gap: 16px;
 }
 
 
-.footer-input {
-    width: 264px;
+.footer-input {  
+
+    max-width: 396px;
     height: 40px;
     padding: 8px 16px;
     background-color: transparent;
@@ -572,16 +613,16 @@ fill: var(--accent-icon-color);
 }
 
 .footer-input:focus {
-   border-color: #4D5AE5;  
+    border-color: #4D5AE5;
 }
 
 .footer-form-btn {
     min-width: 165px;
     min-height: 40px;
-  
+
     display: flex;
     gap: 16px;
-    
+
     text-align: center;
     letter-spacing: 0.04em;
 
@@ -598,7 +639,7 @@ fill: var(--accent-icon-color);
 
 .footer-form-btn:hover,
 .footer-form-btn:focus {
-background-color: var(--btn-active-color);
+    background-color: var(--btn-active-color);
 }
 
 /* ---------------- PORTFOLIO ----------------- */

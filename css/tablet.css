@@ -2,8 +2,25 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
+
+/* ---------------- HEADER --------------- */
+ .nav-list {
+     display: flex;
+     align-items: center;
+     gap: 40px;
+
+ }
+
+ .address-list {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+    
+     gap: 40px;
+     margin-left: auto;
+ }
 
 /* ------------------- HERO ------------------ */
 
@@ -45,7 +62,7 @@
 /*  ---------------- BENEFITS ----------------- */
 
 .benefits.container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 19px;
     padding-right: 19px;
     
@@ -84,7 +101,32 @@
 }
 
 /* ---------------- CUSTOMERS ----------------- */
+.logo {
+    text-align: left;
+}
+.text-title {
+    text-align: left;
+}
+.footer-midle {
+    margin-right: 0;
+    margin-left:0
+   
+}
+.footer-input {
+    width: 264px;
+}
+.footer-wrap{
+    max-width: 552px;
+    padding-right: 0;
+   padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+    /* justify-content: center; */
 
-
-
+}
+.footer-wrap-form>.card-set {
+    gap: 24px;
+}
 }

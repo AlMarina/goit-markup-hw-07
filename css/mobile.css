@@ -4,12 +4,13 @@
 
 @media screen and (min-width: 480px){
     .container{
-        width: 480px;
+        max-width: 428px;
     }
 
-  .benefits.container {
+  /* .benefits.container {
       width: 396px;
+  } */
+  .footer-input {
+   width: 396px;
   }
-   
-   
 } 

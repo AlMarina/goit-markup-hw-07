@@ -1,16 +1,34 @@
 
 
 
-/* ------------------- HERO ------------------ */
+
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1200px;
+       max-width: 1200px;
     }
     .section {
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+/* ---------------- HEADER --------------- */
+
+        /* .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+    
+        }
+
+        .address-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    margin-left: auto;
+                } */
+
+/* ------------------- HERO ------------------ */
 
     .hero-section {
         padding-top: 188px;
@@ -47,47 +65,77 @@
 
 
 /*  ---------------- BENEFITS ----------------- */
-        .benefits.container {
-            width: 1158px;
-            padding-left: 15px;
-            padding-right: 15px;
+    .benefits.container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     
-              --items: 4;
-        }
+        --items: 4;
+    }
 
-        .benefits-item>.post-title {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: calc(24 / 20);
+    .benefits-item>.post-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24 / 20);
            
-        }
-        .benefits-item>.text {
-            font-weight: 400;
-        }
+    }
+    .benefits-item>.text {
+        font-weight: 400;
+    }
 
-        .icon-wrap {
-            display: block;
-            margin-bottom: 8px;
-            height: 112px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--bg-ligth-color);
-        }
+    .icon-wrap {
+        display: block;
+        margin-bottom: 8px;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-ligth-color);
+    }
 
     /* ----------------- ACTIVITY ----------------- */
-        .section-activity {
-            display: block;
-            padding-top: 0;
-        }
-.section-activity .title {
-    margin-bottom: 72px;
-}
+    .section-activity {
+        display: block;
+        padding-top: 0;
+    }
+    .section-activity .title {
+        margin-bottom: 72px;
+    }
     /* ------------------ TEAM ------------------ */
 
    
          
     /* ---------------- CUSTOMERS ----------------- */
 
+
+    /* ------------------ FOOTER ----------------- */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .footer-wrap {
+        max-width: 1128px;
+        display: flex;
+    }
+    
+    .footer-left-side {
+        margin-right: 120px;
+    }
+
+    .footer-rigth-side {   
+        display: flex;
+    }
+
+    .footer-text {
+        margin-bottom: 0;
+    }
+    
+    .footer-midle {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
     
 }
+
