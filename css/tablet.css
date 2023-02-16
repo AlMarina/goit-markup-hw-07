@@ -109,7 +109,7 @@
              }
          }
 
-         @media (min-device-pixel-ratio: ),
+         @media (min-device-pixel-ratio: 3),
          (min-resolution: 288dpi),
          (min-resolution: 3dppx) {
              .bg-hero {
@@ -193,5 +193,24 @@
 .modal-window {
     width: 408px;
     padding: 23px;
+}
+
+
+
+
+.section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+}
+.btn-portfolio {
+
+    padding: 12px 24px;
+   
+}
+.menu-list {
+    justify-content: center;
+    margin-bottom: 64px;
+   
 }
 }

@@ -664,9 +664,8 @@ gap: 16px;
 
 /* ---------------- PORTFOLIO ----------------- */
 .section-portfolio {
-    padding-top: 96px;
-    padding-bottom: 120px;
-    
+    padding-top: 48px;
+    padding-bottom: 48px;
 
 }
 
@@ -674,13 +673,15 @@ gap: 16px;
     min-width: 0px;
     min-height: 0px;
 
-    padding: 12px 24px;
+    /* padding: 12px 24px; */
+    padding: 8px 16px;
     color: var(--accent-text-color);
     background-color: var(--btn-ligth-color);
     border: 1px solid var(--border-color);
 
     transition: color var(--animate-func), background-color var(--animate-func), box-shadow var(--animate-func);
 }
+
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
@@ -691,10 +692,13 @@ gap: 16px;
 
 .menu-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+   justify-content: start;
     gap: 24px;
 
-    margin-bottom: 72px;
+    margin-bottom: 48px;
+    margin-right: 19px;
 }
 
 .portfolio-card {
